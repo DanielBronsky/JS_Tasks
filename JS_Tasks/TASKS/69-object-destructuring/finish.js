@@ -1,0 +1,25 @@
+/** ЗАДАЧА 69 - Деструктуризация объектов
+ *
+ * Создайте функцию "mult", в которой будут умножаться
+ * значения свойств x, y, z переданного объекта
+ *
+ * Результат умножения верните из функции
+ */
+
+const objectWithNumbers = {
+  x: 5,
+  y: 20,
+  z: 3,
+};
+
+// Создайте функцию здесь
+
+function mult(object) {
+  let result = 0;
+  const { x, y, z } = object;
+  return (result = x * y * z);
+}
+
+const result = mult(objectWithNumbers);
+console.log(result);
+// 300
